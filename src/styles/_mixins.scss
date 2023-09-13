@@ -1,0 +1,33 @@
+@mixin flex ($display, $direction, $just, $align, $gap){
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $just;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin grid ($columnas, $espacio){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espacio;    
+}
+
+@mixin minWidth ($medida){
+    @media screen and (min-width: $medida) {
+        @content;
+    }
+}
+
+@mixin box ($ancho, $alto, $fondo){
+    width: $ancho;
+    height: $alto;
+    background-color: $fondo;
+}
+
+@mixin text ($tamano, $grosor, $alineacion, $color){
+    font-size: $tamano;
+    font-weight: $grosor;
+    text-align: $alineacion;
+    color: $color;
+}
+
