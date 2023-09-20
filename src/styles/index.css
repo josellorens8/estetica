@@ -1,7 +1,7 @@
 :root {
   /*Colors*/
-  --morado: #554994;
-  --fucsia: #F675A8;
+  --morado: #282828;
+  --fucsia: #bd0a52;
   --beige: #F29393;
   --beigePastel: #FFCCB3;
   /*Typography*/
@@ -183,4 +183,89 @@ img {
   font-weight: 700;
   text-align: center;
   color: var(--beigePastel);
+}
+.hero__title {
+  font-size: var(--font-xlarge);
+  font-weight: 700;
+  text-align: center;
+  color: var(--beigePastel);
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.tratamiento {
+  width: 100%;
+  margin: 140px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+}
+.tratamiento__box {
+  width: 80%;
+  height: 80%;
+  background-color: var(--beigePastel);
+  border-radius: 100%;
+  position: relative;
+}
+.tratamiento__box::after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+.tratamiento__nombre {
+  margin-top: 5%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: var(--font-xlarge);
+  font-weight: 500;
+  text-align: center;
+  color: var(--morado);
+}
+.tratamiento__descripcion {
+  margin-top: 25%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.tratamiento__imagenes {
+  width: 70%;
+  position: relative;
+  top: 0;
+  z-index: 10;
+  align-self: self-end;
+}
+.tratamiento__marco {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+.tratamiento__imagen {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-clip-path: circle(35% at 50% 50%);
+          clip-path: circle(35% at 50% 50%);
+}
+.tratamiento .depilacion {
+  width: 96%;
+}
+.tratamiento .descarga {
+  width: 115%;
+  -webkit-clip-path: circle(32% at 50% 50%);
+          clip-path: circle(32% at 50% 50%);
+}
+.tratamiento .kiaora {
+  width: 66%;
+  -webkit-clip-path: circle(35% at 50% 50%);
+          clip-path: circle(35% at 50% 50%);
 }/*# sourceMappingURL=index.css.map */

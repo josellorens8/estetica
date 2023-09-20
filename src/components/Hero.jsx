@@ -9,6 +9,7 @@ export const Hero = () => {
                 </picture>
                 <h1 className='hero__text'>Estética <br/> Jesica Llorens</h1>
             </div>
+            <h1 className='hero__title'>Tratamientos</h1>
         </>
     )
 }

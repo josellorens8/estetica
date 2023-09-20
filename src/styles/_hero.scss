@@ -28,4 +28,10 @@
         transform: translate(-50%, -50%);
         @include mixins.text(var(--font-display), 700, center, var(--beigePastel))
     }
+
+    &__title {
+        @include mixins.text(var(--font-xlarge), 700, center, var(--beigePastel));
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
 }

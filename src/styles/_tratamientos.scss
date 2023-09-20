@@ -1,0 +1,75 @@
+@use './resets';
+@use './mixins';
+
+.tratamiento {
+    width: 100%;
+    margin: 140px 0;
+    @include mixins.flex(flex, column, center, center, none);
+
+    &__box {
+        @include mixins.box(80%, 80%, var(--beigePastel));
+        border-radius: 100%;
+        position: relative;
+
+        &::after {
+            content: "";
+            padding-bottom: 100%;
+            display: block;
+        }
+    }
+
+    &__nombre {
+        margin-top: 5%;
+        position: absolute;
+        top: 0; left: 50%;
+        transform: translate(-50%, 0);
+        @include mixins.text(var(--font-xlarge), 500, center, var(--morado))
+    }
+
+    &__descripcion {
+        margin-top: 25%;
+        position: absolute;
+        top: 0; left: 50%;
+        transform: translate(-50%, 0);
+
+    }
+
+    &__imagenes {
+        width: 70%;
+        position: relative;
+        top: 0;
+        z-index: 10;
+        align-self: self-end;
+    }
+
+    &__marco {
+        width: 70%;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9;
+    }
+
+    &__imagen {
+        width: 100%;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        clip-path: circle(35% at 50% 50%);
+    }
+
+    .depilacion {
+        width: 96%;
+    }
+
+    .descarga {
+        width: 115%;
+        clip-path: circle(32% at 50% 50%);
+    }
+
+    .kiaora {
+        width: 66%;
+        clip-path: circle(35% at 50% 50%);
+    }
+
+}
