@@ -4,6 +4,7 @@ import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { Tratamientos } from './components/Tratamientos'
 import imagenes from './assets/imagenes'
+import { RedesSociales } from './components/RedesSociales'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -37,6 +38,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     imagenTratamiento= { imagenes.kiaora }
      altImagen= "Cosmetología"
     />
+    <RedesSociales />
     
   </React.StrictMode>,
 )
