@@ -195,7 +195,7 @@ img {
 
 .tratamiento {
   width: 100%;
-  margin: 140px 0;
+  margin: 10% 0 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -203,8 +203,8 @@ img {
   gap: none;
 }
 .tratamiento__box {
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   background-color: var(--beigePastel);
   border-radius: 100%;
   position: relative;
@@ -215,22 +215,28 @@ img {
   display: block;
 }
 .tratamiento__nombre {
+  max-width: 160px;
   margin-top: 5%;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
-  font-size: var(--font-xlarge);
+  font-size: var(--font-medium);
   font-weight: 500;
   text-align: center;
   color: var(--morado);
 }
 .tratamiento__descripcion {
-  margin-top: 25%;
+  width: 80%;
+  margin-top: 23%;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
+  font-size: var(--font-xxsmall);
+  font-weight: 500;
+  text-align: center;
+  color: var(--morado);
 }
 .tratamiento__imagenes {
   width: 70%;
@@ -255,6 +261,7 @@ img {
   transform: translate(-50%, -50%);
   -webkit-clip-path: circle(35% at 50% 50%);
           clip-path: circle(35% at 50% 50%);
+  overflow: hidden;
 }
 .tratamiento .depilacion {
   width: 96%;

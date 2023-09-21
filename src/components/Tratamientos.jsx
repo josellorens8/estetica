@@ -14,7 +14,7 @@ export const Tratamientos = ({ clase, nombre, descripcion, imagenTratamiento, al
                     </picture>
                     <picture className={`tratamiento__imagen ${clase}`}>
                         <img
-                        src={`./src/assets/${imagenTratamiento}`}
+                        src={imagenTratamiento}
                         alt = {altImagen}
                         />
                     </picture>
