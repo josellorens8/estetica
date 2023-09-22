@@ -1,17 +1,17 @@
-@use './resets';
 @use './mixins';
 
 .header {
     @include mixins.flex(flex, row, center, center, none);
-    @include mixins.box(100%, 100px, var(--beige));
+    @include mixins.box(100%, 100px, var(--oscuro));
     &__navbar {
         display: none;
     }
 }
 
 .burguer {
-    @include mixins.flex(flex, row, space-around, center, none);
+    @include mixins.flex(flex, row, space-between, center, none);
     @include mixins.box(100%, 100px, none);
+    padding: 5%;
     position: relative;
     z-index: 20;
 
@@ -20,19 +20,19 @@
     }
 
     &__spans {
-        @include mixins.box(50px, 50px, var(--morado));
+        @include mixins.box(50px, 50px, var(--rosa));
         @include mixins.flex(flex, column, center, center, 5px);
         border-radius: 100%;
         cursor: pointer;
 
         &:hover {
-            background-color: var(--beigePastel);
+            background-color: var(--rosaFuerte);
         }
 
         span {
             width: 60%;
             height: 4px;
-            background-color: var(--fucsia);
+            background-color: var(--oscuro);
             border-radius: 10px;
         }
     }
@@ -47,7 +47,7 @@
     }
 
     &__navbar {
-        @include mixins.box(100%, auto, var(--fucsia));
+        @include mixins.box(100%, auto, var(--oscuro));
         @include mixins.flex(flex, column, center, center, none);
         
         position: absolute;
@@ -63,10 +63,10 @@
             width: 100%;
             padding: 10px;
             transition: all 0.3s;
-            @include  mixins.text (var(--font-medium), 700, center, var(--morado));
+            @include  mixins.text (var(--font-medium), 700, center, var(--rosaLight));
         &:hover {
-            background-color: var(--morado);
-            color: var(--beige);
+            background-color: var(--rosaLight);
+            color: var(--oscuro);
         }
     }
 }

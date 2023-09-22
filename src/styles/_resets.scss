@@ -1,10 +1,13 @@
 :root {
     /*Colors*/
+    --oscuro: #2e2b2b;
+    --rosaFuerte: #B34A64;
+    --rosa: #DE90A0;
+    --rosaPastel: #F1A5A6;
+    --rosaLight: #FFB8CB;
+    --light: #FFE6EC;
+    
 
-    --morado: #282828;
-    --fucsia: #bd0a52;
-    --beige: #F29393;
-    --beigePastel: #FFCCB3;
     /*Typography*/
     --base-font: 'Gotu', sans-serif;
     --alternative-font: '', sans-serif;
@@ -19,18 +22,6 @@
     --font-xsmall: 1.2em;
     --font-xxsmall: 1em;
 
-    /*Spacings*/
-    --spacing-128: 12.8rem;
-    --spacing-96: 9.6rem;
-    --spacing-68: 6.8rem;
-    --spacing-36: 3.6rem;
-    --spacing-28: 2.8rem;
-    --spacing-24: 2.4rem;
-    --spacing-20: 2rem;
-    --spacing-16: 1.6rem;
-    --spacing-12: 1.2rem;
-    --spacing-8: 0.8rem;
-    --spacing-6: 0.6rem;
 }
 
 *,
@@ -47,7 +38,7 @@ html {
 }
 
 body{
-    background-color: var(--morado);
+    background-color: var(--rosa);
 }
 
 a {
@@ -62,11 +53,6 @@ a {
 
 ul, ol {
     list-style-type: none;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 img {
