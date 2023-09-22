@@ -1,4 +1,4 @@
-import Logo from '../assets/Logo_vector.png'
+import imagenes from "../assets/imagenes"
 
 export const Header = () => {
     return (
@@ -7,7 +7,7 @@ export const Header = () => {
                 <nav className="header__navbar">
                     <picture className="header__img">
                         <img
-                        src={ Logo } alt="Logo pagina" />
+                            src={imagenes.Logo} alt="Logo pagina" />
                     </picture>
                     <div className="burguer__button"><a href="">Links</a></div>
                     <div className="burguer__button"><a href="">Links</a></div>
@@ -18,8 +18,8 @@ export const Header = () => {
                 </nav>
                 <nav className="burguer">
                     <picture className="burguer__img">
-                    <img
-                    src={ Logo } alt="Logo pagina" />
+                        <img
+                            src={imagenes.Logo} alt="Logo pagina" />
                     </picture>
                     <label for="menu" className="burguer__menu">
                         <div className="burguer__spans">

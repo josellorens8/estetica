@@ -1,0 +1,6 @@
+@use './resets';
+@use './mixins';
+
+.footer {
+    @include mixins.box(100%, 30vh, var(--morado));
+}

@@ -35,3 +35,15 @@
         text-transform: uppercase;
     }
 }
+
+.whatsapp {
+    width: 12%;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    right: 0; bottom: 0;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    z-index: 100;
+}
